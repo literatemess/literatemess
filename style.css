@@ -141,86 +141,11 @@ ul li::before {
     box-shadow: 0 14px 24px rgba(72, 58, 72, 0.12);
 }
 
-.goodreads-widgets {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: stretch;
-    gap: 20px;
-}
-
-.goodreads-bookshelf {
-    min-width: 0;
-}
-
-.gr_custom_container_1792513938 {
+.gr-updates-card {
     width: 100%;
-    height: 100%;
-    padding: 14px;
-    color: var(--ink);
-    background-color: var(--paper-strong);
-    border: 2px solid var(--pink);
-    border-radius: 18px;
-    box-shadow: 0 8px 18px var(--shadow);
-}
-
-.gr_custom_header_1792513938 {
-    display: none;
-}
-
-.gr_custom_each_container_1792513938 {
-    width: 100%;
-    min-height: 76px;
-    clear: both;
-    overflow: auto;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(184, 140, 176, 0.3);
-}
-
-.gr_custom_book_container_1792513938 {
-    width: 42px;
-    height: 64px;
-    float: left;
-    overflow: hidden;
-    margin-right: 10px;
-    border-radius: 4px;
-}
-
-.gr_custom_book_container_1792513938 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.gr_custom_rating_1792513938 {
-    float: right;
-}
-
-.gr_custom_rating_1792513938 img {
-    width: 15px;
-    height: 15px;
-}
-
-.gr_custom_title_1792513938,
-.gr_custom_author_1792513938 {
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
-
-.gr_custom_tags_1792513938 {
-    margin-top: 4px;
-    color: var(--muted);
-    font-size: 0.75rem;
-}
-
-.gr_custom_container_1792513938 center {
-    margin-top: 10px;
-}
-
-.gr-updates-widget {
-    width: 100%;
-    min-width: 0;
-    padding: 14px;
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 16px;
     overflow: hidden;
     background: var(--paper-strong);
     border: 2px solid var(--pink);
@@ -228,37 +153,25 @@ ul li::before {
     box-shadow: 0 8px 18px var(--shadow);
 }
 
-.gr-updates-widget iframe {
+.gr-updates-card iframe {
     display: block;
     width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+    height: 380px;
     border: 0;
-    border-radius: 8px;
-    background: #fff;
+    border-radius: 10px;
+    background: var(--paper);
 }
 
 .gr-updates-footer {
-    margin-top: 10px;
-    text-align: center;
+    height: 30px;
+    margin-top: 8px;
 }
 
 .gr-updates-footer img {
-    display: inline-block;
+    display: block;
     width: 100px;
     height: auto;
     border: 0;
-}
-
-@media (max-width: 760px) {
-    .goodreads-widgets {
-        grid-template-columns: 1fr;
-    }
-
-    .goodreads-bookshelf,
-    .gr-updates-widget {
-        max-width: 420px;
-    }
 }
 
 @media (max-width: 700px) {
