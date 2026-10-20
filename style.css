@@ -215,6 +215,39 @@ ul li::before {
     margin-top: 10px;
 }
 
+.gr-updates-widget {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px;
+    overflow: hidden;
+    background: var(--paper-strong);
+    border: 2px solid var(--pink);
+    border-radius: 18px;
+    box-shadow: 0 8px 18px var(--shadow);
+}
+
+.gr-updates-widget iframe {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.gr-updates-footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.gr-updates-footer img {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    border: 0;
+}
+
 @media (max-width: 700px) {
     body {
         padding: 20px 14px;
