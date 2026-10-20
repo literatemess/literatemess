@@ -141,9 +141,20 @@ ul li::before {
     box-shadow: 0 14px 24px rgba(72, 58, 72, 0.12);
 }
 
+.goodreads-widgets {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 20px;
+}
+
+.goodreads-bookshelf {
+    min-width: 0;
+}
+
 .gr_custom_container_1792513938 {
     width: 100%;
-    max-width: 420px;
+    height: 100%;
     padding: 14px;
     color: var(--ink);
     background-color: var(--paper-strong);
@@ -153,16 +164,7 @@ ul li::before {
 }
 
 .gr_custom_header_1792513938 {
-    width: 100%;
-    margin: 0 0 12px;
-    padding-bottom: 10px;
-    border-bottom: 1px dotted var(--mauve);
-    text-align: center;
-    font-size: 1rem;
-}
-
-.gr_custom_header_1792513938 a {
-    color: var(--mauve);
+    display: none;
 }
 
 .gr_custom_each_container_1792513938 {
@@ -217,7 +219,7 @@ ul li::before {
 
 .gr-updates-widget {
     width: 100%;
-    max-width: 280px;
+    min-width: 0;
     padding: 14px;
     overflow: hidden;
     background: var(--paper-strong);
@@ -229,7 +231,7 @@ ul li::before {
 .gr-updates-widget iframe {
     display: block;
     width: 100%;
-    max-width: 250px;
+    max-width: 100%;
     margin: 0 auto;
     border: 0;
     border-radius: 8px;
@@ -246,6 +248,17 @@ ul li::before {
     width: 100px;
     height: auto;
     border: 0;
+}
+
+@media (max-width: 760px) {
+    .goodreads-widgets {
+        grid-template-columns: 1fr;
+    }
+
+    .goodreads-bookshelf,
+    .gr-updates-widget {
+        max-width: 420px;
+    }
 }
 
 @media (max-width: 700px) {
