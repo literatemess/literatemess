@@ -13,6 +13,13 @@ body {
 
 }
 
+.wrap {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(245, 240, 232, 0.92);
+}
+
 h1 {
     font-size: 50px; 
     letter-spacing: 2px;
