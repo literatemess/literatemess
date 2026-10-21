@@ -1,64 +1,43 @@
 ---
 layout: default
-title: literatemess
-subtitle: welcome to my little corner of the web
+title: Welcome to my little corner of the web
+subtitle: a personal scrapbook of things i love
 ---
 
-    <div class="wrap">
-      <section id="about" class="site-section">
-        <h2>about me</h2>
-        <p>hi! i'm issy, aka literatemess. i'm a student who is teaching herself to code.</p>
+<div class="wrap landing-page">
+  <p class="landing-intro">hi! i'm issy, aka literatemess. this is my little corner of the web for the things i'm making, noticing, and loving lately.</p>
 
-        <h4>things i like:</h4>
-        <ul>
-          <li>photography</li>
-          <li>travel</li>
-          <li>reading</li>
-          <li>gaming</li>
-          <li>baking</li>
-        </ul>
-      </section>
+  <div class="landing-grid">
+    <a class="landing-card" href="{{ '/about/' | relative_url }}">
+      <h2>about me</h2>
+      <p>a little introduction, plus a few things i love.</p>
+      <span>come say hello →</span>
+    </a>
 
-      <section id="photos" class="site-section">
-        <h2>photos i've taken</h2>
-        <div class="gallery">
-          <img src="images/cover image.jpg" alt="a photo of an icelandic waterfall" />
-          <img src="images/firefiles wallpaper trees.jpg" alt="fireflies in a forest wallpaper" />
-          <img src="images/isabelle pfp.jpg" alt="a photo of isabelle from animal crossing" />
-        </div>
-      </section>
+    <a class="landing-card" href="{{ '/photos/' | relative_url }}">
+      <h2>photos</h2>
+      <p>small moments and places i've captured along the way.</p>
+      <span>take a look →</span>
+    </a>
 
-      <section id="reading" class="site-section">
-        <h2>reading updates</h2>
-        <div class="gr-updates-card">
-          <iframe
-            title="My recent Goodreads updates"
-            src="https://goodreads.com/widgets/user_update_widget?height=450&amp;num_updates=3&amp;user=131466296&amp;width=350"
-            width="350"
-            height="380"
-            frameborder="0"
-            loading="lazy"
-            sandbox
-          ></iframe>
-          <div class="gr-updates-footer">
-            <a href="https://www.goodreads.com/">
-              <img
-                alt="Goodreads: Book reviews, recommendations, and discussion"
-                src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
+    <a class="landing-card" href="{{ '/recipes/' | relative_url }}">
+      <h2>recipes</h2>
+      <p>cozy bakes and other kitchen experiments (coming soon).</p>
+      <span>peek in the kitchen →</span>
+    </a>
 
-      <section id="elsewhere" class="site-section">
-        <h2>find me elsewhere</h2>
-        <p>this is a work in progress - check back soon for updates!</p>
-        <ul>
-          <li><a href="https://archiveofourown.org/users/m0thwing_s">AO3</a></li>
-          <li><a href="https://www.tumblr.com/literatemess?source=share">Tumblr</a></li>
-        </ul>
-      </section>
-    </div>
+    <a class="landing-card" href="{{ '/reading/' | relative_url }}">
+      <h2>reading updates</h2>
+      <p>what i'm reading and the books currently keeping me company.</p>
+      <span>browse my bookshelf →</span>
+    </a>
+
+    <a class="landing-card" href="{{ '/links/' | relative_url }}">
+      <h2>elsewhere</h2>
+      <p>find me around the internet.</p>
+      <span>follow the links →</span>
+    </a>
+  </div>
+</div>
 
     

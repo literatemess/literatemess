@@ -12,7 +12,8 @@ site-css:
   - style.css
 
 navbar-links:
-  About: /#about
-  Photos: /#photos
-  Reading: /#reading
-  Elsewhere: /#elsewhere
+  About: /about/
+  Photos: /photos/
+  Recipes: /recipes/
+  Reading: /reading/
+  Links: /links/
