@@ -40,6 +40,32 @@ head-extra:
       <span>follow the links →</span>
     </a>
   </div>
+
+  <aside class="visitor-counter" aria-label="Site visit counter">
+    <p>little visits to my corner of the web</p>
+    <div id="visitor-count" aria-live="polite">fetching the visitor count…</div>
+  </aside>
 </div>
+
+<script>
+  (function () {
+    var attempts = 0;
+    var counter = window.setInterval(function () {
+      attempts += 1;
+
+      if (window.goatcounter && window.goatcounter.visit_count) {
+        window.clearInterval(counter);
+        window.goatcounter.visit_count({
+          append: "#visitor-count",
+          path: "TOTAL",
+          no_branding: true
+        });
+      } else if (attempts >= 100) {
+        window.clearInterval(counter);
+        document.querySelector("#visitor-count").textContent = "the count is taking a little nap";
+      }
+    }, 100);
+  })();
+</script>
 
     

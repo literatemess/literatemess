@@ -104,6 +104,40 @@ body {
     font-family: Georgia, "Times New Roman", serif;
 }
 
+.visitor-counter {
+    width: fit-content;
+    max-width: 100%;
+    margin: 28px auto 0;
+    padding: 14px 22px;
+    text-align: center;
+    background: var(--paper-strong);
+    border: 1px solid rgba(184, 140, 176, 0.4);
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(76, 57, 69, 0.08);
+}
+
+.visitor-counter p {
+    margin: 0 0 6px;
+    color: var(--muted);
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+#visitor-count {
+    color: var(--mauve);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+}
+
+#visitor-count > div {
+    margin: 0 auto;
+    padding: 0;
+    color: var(--mauve);
+    background: transparent;
+    border: 0;
+    font: inherit;
+    box-shadow: none;
+}
+
 h1, h2, h3, h4 {
     font-family: Georgia, "Times New Roman", serif;
 }
