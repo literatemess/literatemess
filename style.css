@@ -160,6 +160,7 @@ ul li::before {
     border: 0;
     border-radius: 10px;
     background: var(--paper);
+    background-color: var(--rose);
 }
 
 .gr-updates-footer {
