@@ -46,8 +46,17 @@ body {
     backdrop-filter: blur(2px);
 }
 
-section {
-    margin-top: 28px;
+.site-section {
+    margin-top: 22px;
+    padding: 22px 24px;
+    background: rgba(255, 249, 245, 0.72);
+    border: 1px solid rgba(184, 140, 176, 0.28);
+    border-radius: 20px;
+    scroll-margin-top: 90px;
+}
+
+.site-section:first-child {
+    margin-top: 0;
 }
 
 h1, h2, h3, h4 {
@@ -183,6 +192,10 @@ ul li::before {
 
     .wrap {
         padding: 22px 18px 28px;
+    }
+
+    .site-section {
+        padding: 18px 16px;
     }
 
     .gallery {

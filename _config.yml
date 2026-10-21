@@ -10,3 +10,9 @@ plugins:
 
 site-css:
   - style.css
+
+navbar-links:
+  About: /#about
+  Photos: /#photos
+  Reading: /#reading
+  Elsewhere: /#elsewhere
