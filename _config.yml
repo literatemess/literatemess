@@ -1,0 +1,12 @@
+title: literatemess
+description: My little corner of the web
+url: https://literatemess.github.io
+baseurl: /literatemess
+
+remote_theme: daattali/beautiful-jekyll@6.0.1
+
+plugins:
+  - jekyll-remote-theme
+
+site-css:
+  - style.css
